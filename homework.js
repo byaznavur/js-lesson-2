@@ -78,7 +78,53 @@
 // ! ﻿SHAXMATGA OID MASALALAR (IXTIYORIY)
 
 // Boolean16. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: "Berilgan maydonlar bir xil rangda".
+// let x1 = 3;
+// let y1 = 4;
+
+// let x2 = 5;
+// let y2 = 6;
+
+// let res = (x1 + y1) % 2 === (x2 + y2) % 2;
+
+// console.log(res);
 // Boolean17. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: "Ruh bir yurishda bir maydondan ikkinchisiga o'ta oladi".
+// let x1 = 3;
+// let y1 = 4;
+
+// let x2 = 5;
+// let y2 = 6;
+
+// let res = x1 === x2 || y1 === y2;
+// console.log(res);
 // Boolean18. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: "Shoh bir yurishda bir maydondan ikkinchisiga o'ta oladi."
+
+// let x1 = 3;
+// let y1 = 4;
+
+// let x2 = 5;
+// let y2 = 6;
+
+// let res = Math.abs(x1 - x2) <= 1 && Math.abs(y1 - y2) <= 1;
+// console.log(res);
 // Boolean19. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: "Fil bir yurishda bir maydondan ikkinchisiga o'ta oladi".
+// let x1 = 3;
+// let y1 = 4;
+
+// let x2 = 5;
+// let y2 = 6;
+
+// let res =Math.abs(x1 - x2) === Math.abs(y1 - y2);
+// console.log(res);
 // Boolean20. Shaxmat doskasining ikkita turli (x1, y1), (x2, y2) koordinalari berilgan (1-8 oraliqda yotuvchi butun sonlar). Jumlani rostlikka tekshiring: "Ot bir yurishda bir maydondan ikkinchisiga o'ta oladi".
+let x1 = 3;
+let y1 = 4;
+
+let x2 = 5;
+let y2 = 6;
+
+const dx = Math.abs(x1 - x2);
+const dy = Math.abs(y1 - y2);
+
+let res = (dx === 2 && dy === 1) || (dx === 1 && dy === 2);
+
+console.log(res); // true yoki false (natijaga qarab)
